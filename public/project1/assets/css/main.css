@@ -1,0 +1,119 @@
+/* Simple Selector*/
+body {
+    background-image: url(../img/background.jpg);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header {
+    background-image: url(../img/header.jpg);
+    padding: 35px;
+    border-radius: 15px;
+}
+
+/*Navigation Styles*/
+nav {
+    font-size: 20px;
+    position: sticky;
+    top: 0.5em;
+    left: 0;
+    right: 0;
+    list-style: none;
+    text-align: center;
+}
+
+/* Combinator Selector*/
+nav>ul>li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+h1,h2 {
+    text-shadow: 1px 1px 2px white, 0 0 1em red, 0 0 1.0em yellow;
+}
+
+/*Pseudo-elements selector*/
+section::first-letter {
+    font-size: 150%;
+}
+
+.buttons {
+    color: darkblue;
+    border: 2px solid #c8981e;
+    padding: 8px;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom, #c8981e, #f5e5bc);
+    margin-left: 1em;
+}
+
+/*Pseudo-class Selector*/
+.buttons:hover {
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(to top, black, #fcf6e9);
+    padding: 7px;
+    border-radius: 20px;
+}
+
+/*Attribute Selector*/
+a[href] {
+    text-decoration: none;
+}
+
+#logo {
+    position: absolute;
+    top: 8px;
+    right: 0;
+    width: 150x;
+    height: 150px;
+}
+
+#college {
+    width: 600px;
+    margin-left: 10px;
+}
+
+section>ul>li:nth-child(2n) {
+    background-color: #FED8B1;
+    box-shadow: 5px 2px 2px gray;
+    border-radius: 3em;
+    width: 20%;
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+}
+
+/* adding some space between the images */
+.center {
+    border-radius: 20px;
+    border: solid #c8981e;
+    max-width: 35%;
+    margin: 0 10px;
+}
+
+figcaption {
+    align-self: flex-end;
+    font-style: italic;
+    color: rgb(105, 100, 100);
+}
+
+hr {
+    border-style: none;
+    border-top-style: dotted;
+    border-width: 15px;
+    color: #CDC7BE;
+    width: 4%;
+}
+
+footer{
+    text-align: center;
+}
+
+footer a:hover {
+    color: black;
+}
+
+footer li {
+    color: gray;
+    list-style: none;
+}
